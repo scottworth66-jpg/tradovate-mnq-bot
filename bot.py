@@ -61,9 +61,32 @@ def save_memory(file, content):
         f.write(content)
 
 def send_daily_email(routine_type, content):
-    # (same email function as your Alpaca bot — copy it from there)
-    # ... paste your existing send_daily_email function here ...
-    pass  # ← replace with your existing email function
+  print(f"📧 DEBUG: Attempting to send email for routine: '{routine_type}'")
+    if not all([EMAIL_HOST, EMAIL_USER, EMAIL_PASS, EMAIL_TO]):
+        print("⚠️ Email settings not fully configured - skipping")
+        return
+    today = datetime.now(ET).strftime("%Y-%m-%d")
+    body = f"""
+🟢 Grok Trading Bot — {routine_type.upper()} Summary
+📅 {datetime.now(ET).strftime("%A, %B %d, %Y at %H:%M ET")}
+
+{content}
+
+🔗 Full journal: https://github.com/{os.getenv('GITHUB_REPOSITORY', 'your-username/grok-trading-bot')}/blob/main/memory/journal.md
+    """.strip()
+    msg = MIMEText(body, "plain")
+    msg["Subject"] = f"📈 Daily Trading Recap — {today}"
+    msg["From"] = EMAIL_USER
+    msg["To"] = EMAIL_TO
+    try:
+        server = smtplib.SMTP(EMAIL_HOST, EMAIL_PORT)
+        server.starttls()
+        server.login(EMAIL_USER, EMAIL_PASS)
+        server.sendmail(EMAIL_USER, EMAIL_TO, msg.as_string())
+        server.quit()
+        print("✅ Daily summary email sent successfully!")
+    except Exception as e:
+        print("❌ Failed to send email:", str(e))
 
 def run_routine(routine_type):
     strategy = load_memory("strategy_rules.md")
@@ -74,10 +97,15 @@ def run_routine(routine_type):
     current_et_time = now_et.strftime("%Y-%m-%d %H:%M ET")
 
     if "eod" in routine_type.lower() or "summary" in routine_type.lower() or "weekly" in routine_type.lower():
-        # Reuse your existing EOD/weekly logic here (copy from Alpaca bot)
-        # ... paste the summary handling code you already have ...
-        pass  # ← copy your EOD handling from the final Alpaca bot.py
+        if "weekly" in routine_type.lower():
+            instructions_file = "weekly_summary_instructions.md"
+            summary_type = "Weekly Summary"
+        else:
+            instructions_file = "eod_summary_instructions.md"
+            summary_type = "EOD Summary"
 
+        instructions = load_memory(instructions_file)
+    
     # Trading logic for MNQ
     prompt = f"""You are a professional futures trading bot for MNQ. Current time (ET): {current_et_time}
 
