@@ -84,6 +84,13 @@ def send_daily_email(routine_type, content):
         print("⚠️ Email settings not fully configured - skipping")
         return
     today = datetime.now(ET).strftime("%Y-%m-%d")
+    
+    # Dynamic subject line (fixed for weekly vs EOD)
+    if "weekly" in routine_type.lower():
+        subject = f"📈 MNQ Weekly Trading Recap — {today}"
+    else:
+        subject = f"📈 MNQ EOD Recap — {today}"
+    
     body = f"""
 🟢 Grok MNQ Golden Candle Bot — {routine_type.upper()} Summary
 📅 {datetime.now(ET).strftime("%A, %B %d, %Y at %H:%M ET")}
@@ -92,8 +99,9 @@ def send_daily_email(routine_type, content):
 
 🔗 Full journal: https://github.com/{os.getenv('GITHUB_REPOSITORY', 'your-username/tradovate-mnq-bot')}/blob/main/memory/journal.md
     """.strip()
+    
     msg = MIMEText(body, "plain")
-    msg["Subject"] = f"📈 MNQ Daily Recap — {today}"
+    msg["Subject"] = subject
     msg["From"] = EMAIL_USER
     msg["To"] = EMAIL_TO
     try:
@@ -102,7 +110,7 @@ def send_daily_email(routine_type, content):
         server.login(EMAIL_USER, EMAIL_PASS)
         server.sendmail(EMAIL_USER, EMAIL_TO, msg.as_string())
         server.quit()
-        print("✅ Daily summary email sent successfully!")
+        print("✅ Summary email sent successfully!")
     except Exception as e:
         print("❌ Failed to send email:", str(e))
 
@@ -190,11 +198,4 @@ Your job:
         except Exception as e:
             print(f"❌ Order failed: {e}")
 
-    new_entry = f"\n\n### {current_et_time} - {routine_type}\n{decision.get('reasoning', 'No reasoning provided')}"
-    save_memory("journal.md", journal + new_entry)
-    print("Routine complete. Decision:", decision)
-
-if __name__ == "__main__":
-    import sys
-    routine = sys.argv[1] if len(sys.argv) > 1 else "unknown"
-    run_routine(routine)
+    new_entry = f"\n\n### {
