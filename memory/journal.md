@@ -76,3 +76,27 @@ Max daily loss limit never approached. Total risk used: 0.00%. Win rate and cont
 Maintain the 5-minute trend bias filter as the non-negotiable foundation before scanning 1-minute charts for Golden Candle entries. Log full reasoning on every potential setup. Prioritize high-volume windows, hard stops, 1:2 minimum R:R, and daily loss-limit discipline.
 
 No open questions. Ready for next Regular Trading Hours session.
+
+### 2026-04-24 19:08 ET - weekly
+**Weekly Summary – 2026-04-19 to 2026-04-24**
+
+**Overview**  
+This trading week (Sunday open 2026-04-19 through Friday close 2026-04-24) operated exclusively under the 5-Min Trend Bias + 1-Min Golden Candle Scalp strategy on MNQ in PAPER/SIM mode. No 5-Min Trend Bias + 1-Min Golden Candle Scalp setups met all entry criteria on the charts. The account remained fully flat with zero overnight exposure and no rule violations.
+
+**Trades**  
+No trades were taken. No 5-Min Trend Bias + 1-Min Golden Candle Scalp setups met all entry criteria on the charts. The 5-minute trend filter (price above/below 9/21 EMA, 9 EMA slope, and MACD histogram expansion) never aligned with a qualifying 1-minute Golden Candle (large body, small wick, closes in trend direction), volume bubble, pullback to 9 EMA or Alpha Zone, acceptable RSI(14), and market structure during the 9:30–16:00 ET Regular Trading Hours.
+
+**Performance**  
+Weekly P&L: 0.00  
+Equity change: 0.00%  
+Max daily loss limit never approached. Total risk used: 0.00%. Win rate and contract volume: N/A.
+
+**Key Lessons**  
+- Strict adherence to every Golden Candle Entry Rule prevented any marginal or incomplete setups from being taken.  
+- Highest-probability windows (first 90–120 min after open and final 90 min before close) produced no complete alignments.  
+- Patience, flat positioning by 15:45 ET, and zero revenge trading were maintained with perfect rule adherence and no near-misses.
+
+**Next Week Focus**  
+Maintain the 5-minute trend bias filter as the non-negotiable foundation before scanning 1-minute charts for Golden Candle entries. Log full reasoning on every potential setup. Prioritize high-volume windows, hard stops, 1:2 minimum R:R, and daily loss-limit discipline.
+
+No open questions. Ready for next Regular Trading Hours session.
