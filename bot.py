@@ -198,4 +198,11 @@ Your job:
         except Exception as e:
             print(f"❌ Order failed: {e}")
 
-    new_entry = f"\n\n### {
+    new_entry = f"\n\n### {current_et_time} - {routine_type}\n{decision.get('reasoning', 'No reasoning provided')}"
+    save_memory("journal.md", journal + new_entry)
+    print("Routine complete. Decision:", decision)
+
+if __name__ == "__main__":
+    import sys
+    routine = sys.argv[1] if len(sys.argv) > 1 else "unknown"
+    run_routine(routine)
