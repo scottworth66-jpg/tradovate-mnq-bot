@@ -1,0 +1,47 @@
+name: 04 - EOD Summary (5:00 PM ET)
+on:
+  schedule:
+    - cron: '0 21 * * 1-5'   # 5:00 PM ET (21:00 UTC)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
+jobs:
+  trade:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Grok MNQ Bot
+        env:
+          GROK_API_KEY: ${{ secrets.GROK_API_KEY }}
+          TRADOVATE_API_KEY: ${{ secrets.TRADOVATE_API_KEY }}
+          TRADOVATE_USERNAME: ${{ secrets.TRADOVATE_USERNAME }}
+          TRADOVATE_PASSWORD: ${{ secrets.TRADOVATE_PASSWORD }}
+          EMAIL_HOST: ${{ secrets.EMAIL_HOST }}
+          EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+          EMAIL_TO: ${{ secrets.EMAIL_TO }}
+        run: python bot.py eod-summary
+
+      - name: Commit updated memory
+        run: |
+          git config --global user.name "Grok Bot"
+          git config --global user.email "bot@grok.x.ai"
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git add memory/
+          git commit -m "Grok MNQ bot update: EOD summary" || echo "No changes"
+          git push
