@@ -13,20 +13,20 @@
   Any old strategy language
 
 ## Date Filter (NON-NEGOTIABLE)
-- This week runs from Monday to Sunday of the current week (calculate the actual dates based on today’s date)
-- ONLY include journal entries, trades, notes, observations, P&L, screenshots, decisions, or any activity that occurred this week
+- This trading week runs from Sunday market open (previous Sunday 18:00 ET) to Friday 17:00 ET (today)
+- ONLY include journal entries, trades, notes, observations, P&L, screenshots, decisions, or any activity that occurred this trading week
 - Do NOT include ANY content from previous weeks
-- If there is no activity this week, clearly state “No trading activity or journal entries this week”
+- If there is no activity this week, clearly state “No trading activity or journal entries this trading week”
 
 ## Content Requirements
-- Summarize all trades this week using ONLY the exact current strategy rules
+- Summarize all trades this trading week using ONLY the exact current strategy rules
 - Highlight patterns, recurring mistakes, and strongest Golden Candle setups
 - Review rule adherence and any near-misses
 - Include weekly P&L and equity change
 - Keep it concise and actionable
 
 ## Output Format
-- Start with: **Weekly Summary – {{WEEK_START_DATE}} to {{WEEK_END_DATE}}**
+- Start with: **Weekly Summary – {{WEEK_START_DATE}} to {{WEEK_END_DATE}}** (Sunday open → Friday close)
 - Use clear sections (Overview, Trades, Performance, Key Lessons, Next Week Focus)
 - End with any open questions or requests
 
