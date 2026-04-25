@@ -1,4 +1,4 @@
-# Hard Strategy Rules - MNQ Golden Candle Bot (Grok must obey these 100% of the time)
+# Hard Strategy Rules - MNQ (Grok must obey these 100% of the time)
 
 ## Account & Risk Rules (never break)
 - Account type: PAPER / SIM trading until further notice
@@ -20,37 +20,33 @@
 - Trend filter: 5-minute chart
 - Execution & confirmation: 1-minute chart
 
-# MNQ 1M Scalping Strategy Rules (Bot)
+# MNQ 1-Minute Bot Strategy Rules
 
-## 1. Context & Timing
-- **Instrument:** /MNQ (Micro E-mini Nasdaq-100)
-- **Timeframe:** 1 Minute (1M)
-- **Time Window:** 9:30 AM – 11:00 AM ET (High Volatility)
-- **Market State:** Active only when Volume > 20-period average.
+## Core Configuration
+- Symbol: MNQ (Micro Nasdaq-100)
+- Timeframe: 1 Minute (1M)
+- Session: New York Open (09:30 - 16:00 EST)
 
-## 2. Setup Conditions (Filters)
-- **Trend Filter:** Price must be above 200 SMA (Long only) or below 200 SMA (Short only).
-- **Momentum Filter:** 9 EMA > 21 EMA (Bullish) or 9 EMA < 21 EMA (Bearish).
+## Technical Indicators
+- EMA_Fast: 9 period
+- EMA_Slow: 200 period (Trend Filter)
+- Anchor: VWAP (Volume Weighted Average Price)
+- Volatility: ATR 14
 
-## 3. Entry Rules
-- **Long:** Price retests 9 EMA after breaking above it, with a green engulfing candle.
-- **Short:** Price retests 9 EMA after breaking below it, with a red engulfing candle.
-- **Alternative (Breakout):** Enter if 1M candle closes > 15-min High (Long) or < 15-min Low (Short) with high volume.
+## Entry Logic (Binary Conditions)
+1. Trend: Close > EMA_200 AND Close > VWAP = LONG_BIAS
+2. Setup: Price touches EMA_9 and bounces.
+3. Trigger: Enter Market when Current_Price > High_of_Last_Candle.
 
-## 4. Risk Management (Per Trade)
-- **Stop Loss (SL):** 10-15 points (approx. $20-$30 per contract).
-- **Take Profit (TP):** 15-20 points (1:1.5 Risk/Reward).
-- **Max Daily Loss:** Close bot after 3 consecutive losses or -50 points total loss.
-- **Position Size:** 1-2 Contracts (max) to start.
+## Risk Management
+- Max_Daily_Loss: $100 (Stop bot if hit)
+- Max_Open_Trades: 1
+- Position_Size: 1 Contract
+- Stop_Loss: 40 Ticks (10 Points)
+- Take_Profit: 60 Ticks (15 Points)
 
-## 5. Exit Rules
-- **Automatic:** TP or SL hit.
-- **Exit Early:** 9 EMA crosses back over 21 EMA (trend reversal) or 2 consecutive opposite-color candles form.
+## No-Trade Zones
+- Do not trade 5 minutes before/after High Impact News (CPI, FOMC).
+- Do not trade if Spread > 4 ticks.
+- Do not trade after 3 consecutive losses in one session.
 
-## Best Practices Built In
-- Focus on high-volume windows
-- No revenge trading
-- All decisions logged with full reasoning
-- Strategy can only be changed by user instruction
-
-Current preferred style: "5-Min Trend Bias + 1-Min Golden Candle Momentum Scalp on MNQ — high-probability, rule-based, institutional-style entries only"
