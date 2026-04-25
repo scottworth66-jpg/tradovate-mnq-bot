@@ -19,30 +19,35 @@
 ## Core Strategy: 5-Min Trend Bias + 1-Min Golden Candle Scalp
 - Trend filter: 5-minute chart
 - Execution & confirmation: 1-minute chart
-- Goal: 3–6 high-probability Golden Candle setups per day
 
-### Trend filter (5M chart)
-- Bullish: Price above 9 EMA and 21 EMA + 9 EMA sloping upward + MACD histogram expanding positive
-- Bearish: Price below 9 EMA and 21 EMA + 9 EMA sloping downward + MACD histogram expanding negative
+# MNQ 1M Scalping Strategy Rules (Bot)
 
-### Golden Candle Entry Rules (ALL must align)
-- 5-minute chart shows clear trend bias (as defined above)
-- On the 1-minute chart, price pulls back to the 9 EMA or Alpha Zone support/resistance
-- Strong momentum reversal candle (large body, small wick, closes in direction of trend — “Golden Candle”)
-- Volume spike on the entry candle (clearly above average / “Volume Bubble”)
-- RSI(14) on 5M not extreme (>70 for longs, <30 for shorts)
-- Market structure alignment (higher-timeframe swing break or trend wave continuation)
+## 1. Context & Timing
+- **Instrument:** /MNQ (Micro E-mini Nasdaq-100)
+- **Timeframe:** 1 Minute (1M)
+- **Time Window:** 9:30 AM – 11:00 AM ET (High Volatility)
+- **Market State:** Active only when Volume > 20-period average.
 
-### Exit Rules (3-tier targets)
-- Stop-loss: 0.75–1.25% or just beyond recent 1M swing (tighter on strong momentum)
-- Take-Profit Tier 1: 1:1 R:R
-- Take-Profit Tier 2: 1:2 R:R
-- Take-Profit Tier 3: 1:3 R:R or next major level
-- Optional: Move stop to breakeven after Tier 1 hit, then trail 9 EMA on 1M
-- Max hold: 30 minutes
+## 2. Setup Conditions (Filters)
+- **Trend Filter:** Price must be above 200 SMA (Long only) or below 200 SMA (Short only).
+- **Momentum Filter:** 9 EMA > 21 EMA (Bullish) or 9 EMA < 21 EMA (Bearish).
+
+## 3. Entry Rules
+- **Long:** Price retests 9 EMA after breaking above it, with a green engulfing candle.
+- **Short:** Price retests 9 EMA after breaking below it, with a red engulfing candle.
+- **Alternative (Breakout):** Enter if 1M candle closes > 15-min High (Long) or < 15-min Low (Short) with high volume.
+
+## 4. Risk Management (Per Trade)
+- **Stop Loss (SL):** 10-15 points (approx. $20-$30 per contract).
+- **Take Profit (TP):** 15-20 points (1:1.5 Risk/Reward).
+- **Max Daily Loss:** Close bot after 3 consecutive losses or -50 points total loss.
+- **Position Size:** 1-2 Contracts (max) to start.
+
+## 5. Exit Rules
+- **Automatic:** TP or SL hit.
+- **Exit Early:** 9 EMA crosses back over 21 EMA (trend reversal) or 2 consecutive opposite-color candles form.
 
 ## Best Practices Built In
-- Only A+ Golden Candle setups (all rules required)
 - Focus on high-volume windows
 - No revenge trading
 - All decisions logged with full reasoning
