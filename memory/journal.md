@@ -184,3 +184,28 @@ Neutral pending tomorrow’s 15-minute Opening Range at 9:30 ET. Will reassess f
 Disciplined day. Strategy remains 15-Minute Opening Range Breakout on MNQ — pure price and volume, disciplined entries only. Ready for next Regular Trading Hours session. No rule changes requested.
 
 End of Day. Flat.
+
+### 2026-04-28 04:15 ET - midday-scan
+**Midday Scan – 2026-04-28 at 04:15 ET**
+
+**Market Bias**  
+Current MNQ price: 21,542.25  
+5-minute trend bias: Neutral. Pre-RTH session lacks clear alignment; VWAP not yet formed for today’s Regular Trading Hours. Awaiting 9:30 ET open to determine whether price settles above or below developing VWAP with 9 EMA / 21 EMA slope and separation.
+
+**Morning Review**  
+Regular Trading Hours have not yet begun. Overnight action has been range-bound between 21,480–21,610 with low volume and no sustained directional conviction. No setups were available or considered, as all trading is restricted to 9:30–16:00 ET per hard rules. Last four sessions (including 2026-04-27) remained completely flat with zero trades taken due to absence of A+ alignments.
+
+**Current Setups**  
+No A+ setups triggered or forming. Pre-market does not meet the full checklist: confirmed 5-minute trend bias, 1-minute pullback to VWAP or 9 EMA, strong reversal candle, and volume spike. Will scan for first valid pullback after open during the high-probability 9:30–11:00 ET window.
+
+**Key Levels (5-min)**  
+- VWAP: Not yet established (develops post-open)  
+- 9 EMA: 21,518  
+- 21 EMA: 21,489  
+Prior-day VWAP (21,475) noted as potential magnet if price reclaims it after open.
+
+**Open Positions & Recent Trades**  
+Fully flat. No open positions. No trades executed in the past five sessions. Daily P&L at 0.00%. Risk used: 0.00%. Daily loss limit intact.
+
+**Outlook**  
+Neutral pending clear 5-minute trend filter at the open. Highest-probability window remains the first 90–120 minutes after 9:30 ET. Will only consider pullbacks to VWAP or 9 EMA on the 1-minute chart that produce a strong reversal candle with volume expansion in the direction of the 5-minute bias. Strict 8–12 point stops, minimum 1:2 R:R, and breakeven + trail protocol will be enforced. Flat by 15:45 ET. No rule changes.
