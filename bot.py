@@ -85,14 +85,15 @@ def send_daily_email(routine_type, content):
         return
     today = datetime.now(ET).strftime("%Y-%m-%d")
     
-    # Dynamic subject line (fixed for weekly vs EOD)
     if "weekly" in routine_type.lower():
         subject = f"📈 MNQ Weekly Trading Recap — {today}"
+    elif "midday" in routine_type.lower():
+        subject = f"📈 MNQ Midday Scan — {today}"
     else:
         subject = f"📈 MNQ EOD Recap — {today}"
     
     body = f"""
-🟢 Grok MNQ Golden Candle Bot — {routine_type.upper()} Summary
+🟢 Grok MNQ Bot — {routine_type.upper()}
 📅 {datetime.now(ET).strftime("%A, %B %d, %Y at %H:%M ET")}
 
 {content}
@@ -123,11 +124,14 @@ def run_routine(routine_type):
     now_et = datetime.now(ET)
     current_et_time = now_et.strftime("%Y-%m-%d %H:%M ET")
 
-    # === EOD / WEEKLY SUMMARY ===
-    if "eod" in routine_type.lower() or "summary" in routine_type.lower() or "weekly" in routine_type.lower():
+    # === SUMMARY ROUTINES (EOD, Weekly, Midday) ===
+    if any(x in routine_type.lower() for x in ["eod", "summary", "weekly", "midday"]):
         if "weekly" in routine_type.lower():
             instructions_file = "weekly_summary_instructions.md"
             summary_type = "Weekly Summary"
+        elif "midday" in routine_type.lower():
+            instructions_file = "midday_scan_instructions.md"
+            summary_type = "Midday Scan"
         else:
             instructions_file = "eod_summary_instructions.md"
             summary_type = "EOD Summary"
@@ -172,7 +176,7 @@ Create the summary exactly as instructed. Output clean text only (no JSON)."""
         return
 
     # === NORMAL TRADING LOGIC ===
-    prompt = f"""You are a professional MNQ Golden Candle trading bot. Current time (ET): {current_et_time}
+    prompt = f"""You are a professional MNQ scalping bot. Current time (ET): {current_et_time}
 
 STRATEGY RULES (never break these):
 {strategy}
@@ -183,7 +187,7 @@ JOURNAL HISTORY:
 Positions: {positions}
 
 Your job:
-- Analyze current MNQ market using the exact 5-Min Trend Bias + 1-Min Golden Candle rules
+- Analyze current MNQ market using the exact 5-Min Trend Bias + 1-Min VWAP/EMA Pullback rules
 - Decide exact action (buy/sell/hold/flat)
 - Output ONLY valid JSON with keys: action, qty, stop_loss_price, take_profit_price, reasoning"""
 
