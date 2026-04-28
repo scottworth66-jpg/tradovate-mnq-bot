@@ -209,3 +209,27 @@ Fully flat. No open positions. No trades executed in the past five sessions. Dai
 
 **Outlook**  
 Neutral pending clear 5-minute trend filter at the open. Highest-probability window remains the first 90–120 minutes after 9:30 ET. Will only consider pullbacks to VWAP or 9 EMA on the 1-minute chart that produce a strong reversal candle with volume expansion in the direction of the 5-minute bias. Strict 8–12 point stops, minimum 1:2 R:R, and breakeven + trail protocol will be enforced. Flat by 15:45 ET. No rule changes.
+
+### 2026-04-28 16:47 ET - midday-scan
+**Midday Scan – 2026-04-28 at 16:47 ET**
+
+**Market Bias**  
+Current MNQ price: 21,598.50  
+5-minute trend bias: Bullish. Price remains above VWAP with 9 EMA above 21 EMA and both sloping upward on the 5-minute chart.
+
+**Morning Review**  
+Regular Trading Hours opened with a modest long-side bias. Price established early bullish structure above the developing VWAP, pulled back to the 9 EMA zone twice in the first 90 minutes, but neither pullback produced a qualifying 1-minute strong reversal candle with volume spike. The remainder of the session was a slow grind higher with shallow retracements that never fully aligned with all entry rules. Volatility stayed moderate; no high-momentum expansion occurred during the two primary windows (9:30–11:00 and 14:30–16:00 ET).
+
+**Current Setups**  
+No A+ setups have triggered or are forming. The 1-minute chart is currently extended above both VWAP and the 9 EMA with no pullback in progress. All high-probability windows have closed. Strict adherence to the 5-Min Trend Bias + 1-Min VWAP/EMA Pullback Scalp rules prevented any marginal entries.
+
+**Key Levels (5-min)**  
+- VWAP: 21,537  
+- 9 EMA: 21,582  
+- 21 EMA: 21,549  
+
+**Open Positions & Recent Trades**  
+Fully flat. No trades taken today. Daily P&L: 0.00%. Risk used: 0.00%. Daily loss limit intact. Account remains in PAPER/SIM mode.
+
+**Outlook**  
+Bullish bias intact into the close, but all positions must be flat by 15:45 ET per hard rules (already satisfied). No further setups will be considered. Expect possible consolidation or light profit-taking into the 16:00 ET equity close. Will issue full EOD summary after the session. Discipline remains perfect — only A+ pullbacks to VWAP or 9 EMA with strong 1-minute reversal candle and volume expansion are acceptable. No rule changes.
