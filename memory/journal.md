@@ -156,3 +156,31 @@ Neutral pending 5-minute trend filter at the open. Will reassess at 09:30 ET for
 Disciplined day. Strategy remains 5-Min Trend Bias + 1-Min Golden Candle Momentum Scalp. Ready for next Regular Trading Hours session. No rule changes requested.
 
 End of Day. Flat.
+
+### 2026-04-27 20:06 ET - eod-summary
+**EOD SUMMARY - 2026-04-27**
+
+**Trading Session:** Fully flat. All positions closed by 15:45 ET per protocol. No overnight exposure.
+
+**Account Status:** PAPER/SIM | Equity unchanged | Daily P&L: 0.00% | Max daily loss limit not approached.
+
+**Trades Taken:** 0  
+**Win Rate:** N/A  
+**Total Contracts:** 0  
+**Risk Used:** 0.00% (well under 2% total open risk cap)
+
+**Market Review:**  
+No A+ 15-Minute ORB setups met full criteria during the 9:30–16:00 ET window. The 15-minute Opening Range (9:30–9:45 ET) was defined on the 1-minute chart, but no valid breakout candle closed beyond the OR high or low with accompanying volume spike and structural alignment during the highest-probability windows (first 90–120 min and final 90 min). All marginal setups were avoided per hard strategy rules.
+
+**Key Observations:**  
+- Clean session with zero rule violations  
+- Patience maintained — no revenge trading or forced entries  
+- Highest-probability periods produced no qualifying ORB breakouts meeting every checklist item (clear 1-minute close beyond OR level + volume spike)
+
+**Tomorrow’s Bias (as of 20:06 ET):**  
+Neutral pending tomorrow’s 15-minute Opening Range at 9:30 ET. Will reassess for valid breakout conditions, volume confirmation, and minimum 1:2 R:R levels before any consideration.
+
+**Notes:**  
+Disciplined day. Strategy remains 15-Minute Opening Range Breakout on MNQ — pure price and volume, disciplined entries only. Ready for next Regular Trading Hours session. No rule changes requested.
+
+End of Day. Flat.
