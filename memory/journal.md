@@ -233,3 +233,31 @@ Fully flat. No trades taken today. Daily P&L: 0.00%. Risk used: 0.00%. Daily los
 
 **Outlook**  
 Bullish bias intact into the close, but all positions must be flat by 15:45 ET per hard rules (already satisfied). No further setups will be considered. Expect possible consolidation or light profit-taking into the 16:00 ET equity close. Will issue full EOD summary after the session. Discipline remains perfect — only A+ pullbacks to VWAP or 9 EMA with strong 1-minute reversal candle and volume expansion are acceptable. No rule changes.
+
+### 2026-04-28 20:09 ET - eod-summary
+**EOD SUMMARY - 2026-04-28**
+
+**Trading Session:** Fully flat. All positions closed by 15:45 ET per protocol. No overnight exposure.
+
+**Account Status:** PAPER/SIM | Equity unchanged | Daily P&L: 0.00% | Max daily loss limit not approached.
+
+**Trades Taken:** 0  
+**Win Rate:** N/A  
+**Total Contracts:** 0  
+**Risk Used:** 0.00% (well under 2% total open risk cap)
+
+**Market Review:**  
+No A+ setups met full criteria during the 9:30–16:00 ET window. The 5-minute chart maintained a bullish trend bias (price above VWAP with 9 EMA above 21 EMA and both sloping upward), but the two 1-minute pullbacks to the 9 EMA zone in the first 90 minutes lacked a strong reversal candle, volume spike, and complete alignment. The remainder of the session was a slow grind higher with shallow retracements and no high-momentum expansion during the primary windows. Avoided all marginal setups per hard strategy rules.
+
+**Key Observations:**  
+- Clean session with zero rule violations  
+- Patience maintained — no revenge trading or forced entries  
+- Highest-probability periods (first 90–120 min after open and final 90 min before close) produced no qualifying pullback setups meeting every checklist item
+
+**Tomorrow’s Bias (as of 20:09 ET):**  
+Neutral to mildly bullish pending fresh 5-minute trend filter at the open. Will reassess at 09:30 ET for clear price/VWAP relationship, 9/21 EMA alignment and slope, plus valid 1-minute pullbacks before considering any setups.
+
+**Notes:**  
+Disciplined day. Strategy remains 5-Min Trend Bias + 1-Min VWAP/EMA Pullback Scalp on MNQ — high-probability momentum scalps with institutional VWAP alignment. Ready for next Regular Trading Hours session. No rule changes requested.
+
+End of Day. Flat.
