@@ -261,3 +261,29 @@ Neutral to mildly bullish pending fresh 5-minute trend filter at the open. Will 
 Disciplined day. Strategy remains 5-Min Trend Bias + 1-Min VWAP/EMA Pullback Scalp on MNQ — high-probability momentum scalps with institutional VWAP alignment. Ready for next Regular Trading Hours session. No rule changes requested.
 
 End of Day. Flat.
+
+### 2026-04-29 16:19 ET - midday-scan
+**Midday Scan – 2026-04-29 at 16:19 ET**
+
+**Market Bias**  
+Current MNQ price: 21,672.25  
+5-minute trend bias: Bullish. Price remains above VWAP with 9 EMA above 21 EMA and both sloping upward on the 5-minute chart.
+
+**Morning Review**  
+Regular Trading Hours opened with continuation of the prior session’s bullish structure. Price held above the developing VWAP throughout the day and produced three visible 1-minute pullbacks to the VWAP/9 EMA zone (two in the 9:30–11:00 window, one in the 14:30–15:30 window). None of the pullbacks generated a strong reversal candle with above-average volume spike while satisfying every entry rule. The session was a steady grind higher with moderate volatility and no high-momentum expansion during the two primary windows. No marginal setups were taken.
+
+**Current Setups**  
+No A+ setups have triggered or are forming. The 1-minute chart is extended above VWAP and the 9 EMA with the high-probability windows now closed. All entry criteria (5-min bullish bias + 1-min pullback to VWAP or 9 EMA + strong reversal candle + volume spike) remain unfulfilled.
+
+**Key Levels (5-min)**  
+- VWAP: 21,589  
+- 9 EMA: 21,641  
+- 21 EMA: 21,612  
+
+**Open Positions & Recent Trades**  
+Fully flat. No trades taken today or in the past seven sessions. Daily P&L: 0.00%. Risk used: 0.00%. Daily loss limit intact. Account remains in PAPER/SIM mode.
+
+**Outlook**  
+Bullish bias intact but all positions were flattened by 15:45 ET per hard rules (already satisfied). No further setups will be considered. Expect possible consolidation or light profit-taking into the 16:00 ET equity close. Full EOD summary will follow. Strict adherence to the 5-Min Trend Bias + 1-Min VWAP/EMA Pullback Scalp rules continues with zero rule violations.
+
+End of scan. Flat.
