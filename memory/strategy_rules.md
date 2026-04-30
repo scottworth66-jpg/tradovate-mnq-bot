@@ -12,7 +12,7 @@
 - Daily loss limit: Stop trading if down >2%
 
 ## Trading Session
-- Only Regular Trading Hours: 9:30 – 16:00 ET
+- Trading Hours: 8:00 – 16:00 ET
 - Focus on highest-probability windows: first 90–120 min after open + last 90 min before close
 - Avoid trading 30 min before/after major news or FOMC
 
