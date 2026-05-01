@@ -29,7 +29,6 @@
 - 5-minute chart shows clear trend bias (as defined above)
 - On the 1-minute chart, price pulls back to VWAP or the 9 EMA (whichever is closer) in the direction of the 5M trend
 - Strong reversal candle on 1-minute (large body, closes in direction of trend)
-- Volume spike on the entry candle (above average)
 
 ### Exit Rules (mandatory)
 - Stop-loss: 8–12 points or just beyond the recent 1M swing (tighter wins)
