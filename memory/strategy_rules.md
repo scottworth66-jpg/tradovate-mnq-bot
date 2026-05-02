@@ -1,4 +1,4 @@
-# Strategy Rules - MNQ Scalping Bot
+# Hard Strategy Rules - MNQ Scalping Bot (Grok must obey these 100% of the time)
 
 ## Account & Risk Rules (never break)
 - Account type: PAPER / SIM trading until further notice
@@ -12,7 +12,7 @@
 - Daily loss limit: Stop trading if down >2%
 
 ## Trading Session
-- Trading Hours: 8:00 – 16:00 ET
+- Trading Hours: 8:00 – 16:00 ET (Regular Trading Hours)
 - Focus on highest-probability windows: first 90–120 min after open + last 90 min before close
 - Avoid trading 30 min before/after major news or FOMC
 
@@ -28,6 +28,8 @@
 ### Entry Rules (ALL must align)
 - 5-minute chart shows clear trend bias (as defined above)
 - On the 1-minute chart, price pulls back to VWAP or the 9 EMA (whichever is closer) in the direction of the 5M trend
+- The 1-minute candle closes in the direction of the 5M trend (simple close direction, no requirement for "strong" body or engulfing)
+- No additional volume or candle strength filter required
 
 ### Exit Rules (mandatory)
 - Stop-loss: 8–12 points or just beyond the recent 1M swing (tighter wins)
@@ -36,9 +38,11 @@
 - Max hold: 60 minutes
 
 ## Best Practices Built In
-- all entry rules required
+- Only take setups that meet all entry rules above
 - No revenge trading
 - All decisions logged with full reasoning
 - Strategy can only be changed by user instruction
 
-Current preferred style: "5-Min Trend Bias + 1-Min VWAP/EMA Pullback Scalp on MNQ — high-probability momentum scalps with institutional VWAP alignment"
+Current preferred style: "5-Min Trend Bias + 1-Min VWAP/EMA Pullback Scalp on MNQ — mechanical pullback entries with clear trend alignment"
+
+These rules are non-negotiable. Grok must follow them exactly on every trade via Tradovate.
