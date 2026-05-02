@@ -12,24 +12,18 @@
 - Daily loss limit: Stop trading if down >2%
 
 ## Trading Session
-- Trading Hours: 8:00 – 16:00 ET (Regular Trading Hours)
+- Trading Hours: 9:30 – 16:00 ET (Regular Trading Hours)
 - Focus on highest-probability windows: first 90–120 min after open + last 90 min before close
 - Avoid trading 30 min before/after major news or FOMC
 
-## Core Strategy: 5-Min Trend Bias + 1-Min VWAP/EMA Pullback Scalp
-- Trend filter: 5-minute chart
-- Execution: 1-minute chart
-- Goal: 3–8 scalps per day on MNQ
-
-### Trend Filter (5M chart)
-- Bullish: Price above VWAP + 9 EMA above 21 EMA and sloping upward
-- Bearish: Price below VWAP + 9 EMA below 21 EMA and sloping downward
+## Core Strategy: 1-Min VWAP/EMA Pullback Scalp
+- Primary execution: 1-minute chart
+- Goal: 4–10 scalps per day on MNQ (more aggressive)
 
 ### Entry Rules (ALL must align)
-- 5-minute chart shows clear trend bias (as defined above)
-- On the 1-minute chart, price pulls back to VWAP or the 9 EMA (whichever is closer) in the direction of the 5M trend
-- The 1-minute candle closes in the direction of the 5M trend (simple close direction, no requirement for "strong" body or engulfing)
-- No additional volume or candle strength filter required
+- On the 1-minute chart, price pulls back to VWAP or the 9 EMA (whichever is closer)
+- The 1-minute candle closes in the direction of the immediate short-term momentum (simple close direction)
+- No strict 5-minute trend bias required (this is now optional / preferred only)
 
 ### Exit Rules (mandatory)
 - Stop-loss: 8–12 points or just beyond the recent 1M swing (tighter wins)
@@ -43,6 +37,6 @@
 - All decisions logged with full reasoning
 - Strategy can only be changed by user instruction
 
-Current preferred style: "5-Min Trend Bias + 1-Min VWAP/EMA Pullback Scalp on MNQ — mechanical pullback entries with clear trend alignment"
+Current preferred style: "Aggressive 1-Min VWAP/EMA Pullback Scalp on MNQ — frequent mechanical pullback entries with reduced filtering"
 
 These rules are non-negotiable. Grok must follow them exactly on every trade via Tradovate.
