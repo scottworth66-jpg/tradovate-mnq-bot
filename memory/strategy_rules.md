@@ -28,7 +28,7 @@
 ### Exit Rules (mandatory)
 - Stop-loss: 8–12 points or just beyond the recent 1M swing (tighter wins)
 - Take-profit: Minimum 1:2 R:R (Tier 1 at 1:1, Tier 2 at 1:2 or next major level)
-- Trailing stop: Move to breakeven after +1R, then trail 9 EMA on the 5-minute chart
+- Trailing stop: Move to breakeven after +1R, then trail 9 EMA on the 1-minute chart
 - Max hold: 60 minutes
 
 ## Best Practices Built In
