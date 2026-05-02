@@ -1,4 +1,4 @@
-# Hard Strategy Rules - MNQ Scalping Bot (Grok must obey these 100% of the time)
+# Strategy Rules - MNQ Scalping Bot
 
 ## Account & Risk Rules (never break)
 - Account type: PAPER / SIM trading until further notice
@@ -28,20 +28,17 @@
 ### Entry Rules (ALL must align)
 - 5-minute chart shows clear trend bias (as defined above)
 - On the 1-minute chart, price pulls back to VWAP or the 9 EMA (whichever is closer) in the direction of the 5M trend
-- Strong reversal candle on 1-minute (large body, closes in direction of trend)
 
 ### Exit Rules (mandatory)
 - Stop-loss: 8–12 points or just beyond the recent 1M swing (tighter wins)
 - Take-profit: Minimum 1:2 R:R (Tier 1 at 1:1, Tier 2 at 1:2 or next major level)
 - Trailing stop: Move to breakeven after +1R, then trail 9 EMA on the 5-minute chart
-- Max hold: 25 minutes
+- Max hold: 60 minutes
 
 ## Best Practices Built In
-- Only A+ setups (all entry rules required)
+- all entry rules required
 - No revenge trading
 - All decisions logged with full reasoning
 - Strategy can only be changed by user instruction
 
 Current preferred style: "5-Min Trend Bias + 1-Min VWAP/EMA Pullback Scalp on MNQ — high-probability momentum scalps with institutional VWAP alignment"
-
-These rules are non-negotiable. Grok must follow them exactly on every trade via Tradovate.
